@@ -1,0 +1,3 @@
+policy,sequential,random,bursty
+Selector,0.275,0.9,1.0
+Selector-naive,0.275,0.925,0.05

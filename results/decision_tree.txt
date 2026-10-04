@@ -1,0 +1,34 @@
+|--- mean_jump <= 0.01
+|   |--- span <= 0.04
+|   |   |--- std <= 0.01
+|   |   |   |--- mean_jump <= 0.00
+|   |   |   |   |--- class: FCFS
+|   |   |   |--- mean_jump >  0.00
+|   |   |   |   |--- class: FCFS
+|   |   |--- std >  0.01
+|   |   |   |--- class: SSTF
+|   |--- span >  0.04
+|   |   |--- class: FCFS
+|--- mean_jump >  0.01
+|   |--- mean_jump <= 0.22
+|   |   |--- n_clusters <= 2.50
+|   |   |   |--- span <= 0.07
+|   |   |   |   |--- class: SSTF
+|   |   |   |--- span >  0.07
+|   |   |   |   |--- class: SSTF
+|   |   |--- n_clusters >  2.50
+|   |   |   |--- head_offset <= 0.00
+|   |   |   |   |--- class: SSTF
+|   |   |   |--- head_offset >  0.00
+|   |   |   |   |--- class: SSTF
+|   |--- mean_jump >  0.22
+|   |   |--- head_offset <= -0.02
+|   |   |   |--- head_offset <= -0.42
+|   |   |   |   |--- class: SSTF
+|   |   |   |--- head_offset >  -0.42
+|   |   |   |   |--- class: SCAN
+|   |   |--- head_offset >  -0.02
+|   |   |   |--- span <= 0.96
+|   |   |   |   |--- class: SSTF
+|   |   |   |--- span >  0.96
+|   |   |   |   |--- class: SSTF

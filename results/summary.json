@@ -1,0 +1,22 @@
+{
+  "test_accuracy": {
+    "bursty": 0.986,
+    "random": 0.75,
+    "sequential": 0.99,
+    "all": 0.909
+  },
+  "ECE": 0.0109,
+  "mean_conf_correct": 0.945,
+  "mean_conf_wrong": 0.666,
+  "label_distribution_train": {
+    "SSTF": 1730,
+    "FCFS": 987,
+    "SCAN": 283
+  },
+  "selector_vs_best_classical_total": {
+    "selector": 334241,
+    "best_classical": "SSTF",
+    "best_classical_total": 333737,
+    "oracle": 333709
+  }
+}
